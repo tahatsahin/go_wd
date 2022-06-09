@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "github.com/protocolbuffers/protobuf/examples/go/tutorialpb";
+
+message Employee {
+    int32 id = 1;
+    string name = 2;
+    float salary = 3;
+}
+
+message Employees {
+    repeated Employee employees = 1;
+}
+
+
+// protoc -I.  --go_out=. employees.proto
