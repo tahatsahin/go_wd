@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/protocolbuffers/protobuf/examples/go/tutorialpb";
+option go_package = "";
 
 message Employee {
     int32 id = 1;
